@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  background: url('http://colorindonuvens.com/wp-content/uploads/2018/12/Wallpaperk4-universo-colorindonuvens-7.jpg');
+  background-attachment: fixed;
+  color: #fefefe;
+  background-size: 100vw;
+}
+
+.card {
+  background:  transparent;
+}
+.blur {
+  background:  url('./images/background.png');
+  background-attachment: fixed;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+  color: #fefefe;
+  max-width: 600px;
+  padding: 50px;
+  margin: 10px;
+  transition: ease-in-out 500ms;
+}
+
+.blur::before {
+  content: '';
+  background:  url('./images/background.png');
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: blur(5px);
+  border-radius: 15px;
+  transition: ease-in-out 500ms;
+}
+
+.blur h5, .blur p {
+  position: relative;
+}
+
+.carousel-item img {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+
+header {
+  margin: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  background: rgb(64,64,92);
+  background: linear-gradient(73deg, rgba(64,64,92,1) 35%, rgba(138,118,171,1) 100%);
+  border-radius: 35px;
+  -webkit-box-shadow: 5px 5px 15px 5px #40405c; 
+  box-shadow: 5px 5px 15px 5px #40405c;
+  width: 328px;
+  padding: 15px;
+  margin: auto;
+}
+
+.h2-title {
+  border-radius: 35px; 
+  -webkit-box-shadow: 5px 5px 15px 5px #40405C; 
+  box-shadow: 5px 5px 15px 5px #40405C;
+  width: 210px;
+  margin: 20px auto;
+}
+
+#carouselExampleCaptions h2 {
+  margin: 20px;
+}
+
+#card-mission {
+  max-width: 280px;
+  min-width: 280px;
+  opacity: 1;
+  transition: all 150ms ease-in-out; 
+}
+
+#card-mission:hover {
+  background: rgb(235,178,177);
+  background: linear-gradient(5deg, rgba(235,178,177,1) 0%, rgba(130,173,219,1) 100%);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+#container-cards {
+  width: 100vw;
+}
+
+#missions {
+  margin-top: 250px;
+}
+
+.carousel-inner {
+  height: 70vh;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    background: url('./images/919091.jpg');
+    background-size: 100vw;
+    background-attachment: fixed;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: rgba(138,118,171,1) !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev {
+  color: rgba(138,118,171,1) !important;
+}
