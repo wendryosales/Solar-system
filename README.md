@@ -1,11 +1,21 @@
 
 # Solar System
 
-Projeto sobre planetas do sistema solar que contem cards
-sobre as missões espaciais
+Projeto sobre planetas do sistema solar que contem cards sobre as missões espaciais
+## Stacks
 
-- [@wendryosales](https://www.github.com/wendryosales)
+**Front-end:** React.js, bootstrap, HTML, CSS e JavaScript.
 
-### Aplicação / Deploy
+## Screenshots
+
+![web](./solar-system.png)
+
+
+## Demonstração
 
 - [ Solar System ](https://solar-sytem.netlify.app/)
+
+## Author
+
+- [@wendryosales](https://www.linkedin.com/in/wendryosales/)
+
